@@ -21,3 +21,5 @@ terraform {
 
   }
 }
+
+ # if: github.ref == 'refs/heads/"main"' && github.event_name == 'push'
