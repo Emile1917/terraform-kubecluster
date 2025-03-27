@@ -1,5 +1,5 @@
 variable "DEFAULT_RESOURCE_GROUP_NAME" {
-  type = string
+  type    = string
   default = null
 }
 
@@ -9,28 +9,28 @@ variable "LOCATION" {
 }
 
 variable "DOMAIN_NAME" {
-  type = string
+  type    = string
   default = "please_set_the_domain"
 }
 
 variable "master" {
-  type = string
+  type    = string
   default = "kube-controlplane"
 }
 
 variable "worker" {
   type = object({
-    name = string
-    numbers =  number
+    name    = string
+    numbers = number
   })
 
   default = {
-    name = "node"
+    name    = "node"
     numbers = 2
   }
 }
 
 variable "adminuser" {
-  type = string
+  type    = string
   default = "azureuser"
 }

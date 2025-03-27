@@ -4,9 +4,9 @@ provider "azurerm" {
 }
 
 provider "random" {
-  
+
 }
 
 provider "tls" {
-  
+
 }
