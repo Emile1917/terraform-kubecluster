@@ -1,6 +1,6 @@
 locals {
   rg_name = var.DEFAULT_RESOURCE_GROUP_NAME != null ?  data.azurerm_resource_group.rg[0].name : "resource-group-${var.DOMAIN_NAME}"
-  rg_location = var.DEFAULT_RESOURCE_GROUP_NAME != null ?  data.azurerm_resource_group.rg[0].location : var.location
+  rg_location = var.DEFAULT_RESOURCE_GROUP_NAME != null ?  data.azurerm_resource_group.rg[0].location : var.LOCATION
   workers = [for n in range(1,var.worker["numbers"]+1) : "${var.worker["name"]}-${n}"]
   clusters = {for c in concat([var.master],local.workers): c => c }
 }

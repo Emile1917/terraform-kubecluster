@@ -3,7 +3,7 @@ variable "DEFAULT_RESOURCE_GROUP_NAME" {
   default = null
 }
 
-variable "location" {
+variable "LOCATION" {
   description = "Location of the network"
   default     = "eastus"
 }
