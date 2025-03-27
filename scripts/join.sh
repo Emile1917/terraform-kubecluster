@@ -1,0 +1,1 @@
+sudo kubeadm join 10.0.0.6:6443 --token u6t3w1.1oloqbi8ffl9poq1 --discovery-token-ca-cert-hash sha256:25f76ef20ceeb73a0aa7702c93e9ce4d3416c03abd73ed74377a6ba050ce9812  --cri-socket=unix:///var/run/containerd/containerd.sock
