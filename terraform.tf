@@ -1,7 +1,12 @@
 terraform {
-
-  required_version = ">=1.0"
-
+  
+  
+  backend "azurerm" {
+    storage_account_name = "kubecluster"
+    container_name = "backend" 
+    key = "terraform.tfstate"
+  }
+  
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
@@ -17,4 +22,6 @@ terraform {
     }
 
   }
+
+  required_version = ">=1.0"
 }

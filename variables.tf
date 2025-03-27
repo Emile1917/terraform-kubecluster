@@ -34,3 +34,18 @@ variable "adminuser" {
   type = string
   default = "azureuser"
 }
+
+variable "storage_account_name" {
+  type = string
+  default = "kubecluster"
+}
+
+variable "metadata_host" {
+  type = string
+  default = ""
+}
+
+variable "key" {
+  type = string
+  default = ""
+}
